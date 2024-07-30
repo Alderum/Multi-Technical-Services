@@ -1,0 +1,26 @@
+@media (min-width:300px) and (max-width:500px) {
+
+    .header .header-container .nav {
+        height: 0.001px;
+        opacity: 0.001;
+        transition: var(--main-transition);
+    }
+
+
+    .header .header-container .nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 0.001px;
+        opacity: 0.001;
+    }
+
+    .header .header-container {
+        opacity: 1;
+    }
+
+    body {
+        /* The file size of this background image is 93% smaller
+         * to improve page load speed on mobile internet connections */
+        background-image: url(../images/background-photo-mobile-devices.jpg);
+    }
+}

@@ -1,0 +1,179 @@
+/*Déclaration des variables css*/
+
+:root {
+    --color-primary: #193946;
+    --color-white: #fff;
+    --nav-color: #193946;
+    --nav-hover-color: #f3a600;
+    --color-1: #e3e3e3;
+    --color-2: #193946;
+    --color-3: rgb(239, 239, 255);
+    --gradient-1: linear-gradient(to right, #6bb3a5 0%, #f7a600 100%);
+    --main-transition:cubic-bezier(0.39, 0.575, 0.565, 1) .3s;
+}
+/*---------------------------------------reset Style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+    padding: none;
+}
+
+/* ---------------------------------------end reset*/
+
+body {
+    font-size: 1rem;
+    color: var(--color-primary);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+    /* Location of the image */
+    background-image: url(../images/background-photo.jpg);
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color:#464646;
+    
+    /* SHORTHAND CSS NOTATION
+     * background: url(background-photo.jpg) center center cover no-repeat fixed;
+     */
+  }
+
+.header {
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 0 0 22px 22px;
+}
+
+.header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header .header-container .brand .title {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: var(--main-transition);
+}
+
+.title {
+    padding-left: 15px;
+}
+
+.header .header-container .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header .header-container .nav .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.header .header-container .nav .list .list-item {
+    
+    margin: 0 10px;
+    color: var(--nav-color);
+    transition: var(--main-transition);
+}
+
+.header .header-container .nav .list .list-item:hover {
+    display: block;
+    color: var(--nav-hover-color);
+}
+
+.header .header-container .nav .list .list-item .title {
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+.header .header-container .nav .media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header .header-container .nav .media .icon {
+    font-size: 25px;
+    margin: 0 15px;
+    color: var(--color-primary);
+}
+
+.header .header-container #burger {
+    display: none;
+    position: relative;
+    margin: 10px 10px 10px 40px;
+    cursor: pointer;
+}
+
+.header .header-container #burger .line {
+    width: 30px;
+    height: 4px;
+    background-color: var(--color-primary);
+    transition: var(--main-transition);
+}
+
+.header .header-container #burger #line1 {
+    transform: translateY(-4px);
+}
+
+.header .header-container #burger #line3 {
+    transform: translateY(4px);
+}
+
+
+
+.header .header-container #burger.active #line2 {
+    opacity: 0;
+}
+
+.header .header-container #burger.active #line1 {
+    transform: translateY(4px) rotateZ(45deg);
+}
+
+.header .header-container #burger.active #line3 {
+    transform: translateY(-4px) rotate(-45deg);
+}
