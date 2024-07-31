@@ -5,74 +5,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An info page on penguins">
-    <meta name="keywords" content="Penguins, Info page, Personal Project, HTML, CSS, Javascript">
-    <meta name="author" content="https://github.com/Columbium41/">
+    <meta name="description" content="Informacja o usuwaniu awarii elektrycznych">
+    <meta name="keywords" content="Elektryk, Piła, Okolicy, Strona">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Links to css and javascript -->
     <link rel="stylesheet" href="./src/css/awaria/styles.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/mediumScreen.css">
+    <link rel="stylesheet" href="/src/css/smallScreen.css">
+    <link rel="stylesheet" href="/src/css/section.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     <!-- Load script after loading html -->
-    <script src="./src/javascript/awaria.js" defer></script>
+    <script src="/src/javascript/awaria.js" defer></script>
 
-    <title>Penguins Info Page</title>
+    <title>Usuwanie Awarii Elektrycznych Ogólna Informacja</title>
 </head>
 
 <body>
     
     <!-- Header -->
-    <header>
-        <div id="header-fadeout"></div>
-    </header>
+    <div class="grid-container">
+        <header class="header">
+            <div class="header-container">
+                <div class="brand">
+                    <a href="./index.html">
+                        <span class="icon"></span>
+                        <span class="title">MTServices</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="list menu">
+                        <li class="list-item">
+                            <a href="./index.html">
+                                <span class="icon"></span>
+                                <span class="title">Usługi</span>
+                                <ul class="submenu">
+                                    <li class="submenu-position">
+                                        <a href="/awaria.html">Usuwanie awawrii</a>
+                                    </li>
+                                    <li class="submenu-position">
+                                        <a href="">Pomiary instalacji</a>
+                                    </li>
+                                    <li class="submenu-position">
+                                        <a href="">Montaż</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./contact.html">
+                                <span class="icon"></span>
+                                <span class="title">Kontakt</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./index.html">
+                                <span class="icon"></span>
+                                <span class="title">Główna</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="media">
+                        <a href="#">
+                            <span class="icon"><i class="fa-brands fa-square-facebook"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa-brands fa-square-whatsapp"></i></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                        </a>
+                        
+                    </div>
+                </nav>
+
+                <div id="burger">
+                    <div class="burger-container">
+                        <div class="line" id="line1"></div>
+                        <div class="line" id="line2"></div>
+                        <div class="line" id="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <!-- Main Content -->
     <main>
-        <h1>Penguins</h1>
+        <h1>Usuwanie awarii</h1>
         <!-- About Section -->
         <div class="section">
             <h2>O usuwaniu awarii w sieci elektrycznej</h2>
             <p>
                 Usuwanie awarii elektrycznych jest kluczowym elementem zapewniania bezpieczeństwa i sprawnego funkcjonowania systemów elektrycznych. Proces ten może obejmować różnorodne działania, od prostych napraw w domowych instalacjach po skomplikowane interwencje w dużych sieciach energetycznych. Oto kilka podstawowych kroków i aspektów związanych z usuwaniem awarii elektrycznych: 
             </p>
-            <figure>
-                <img src="./images/penguin-swimming.jpeg" alt="An image of a penguin swimming">
-                <figcaption>
-                    <article class="italic">Fig 1 - A penguin swimming underwater</article><br>
-                    <a href="https://youtu.be/hkoKKAZQEYk" target="_blank">Source</a>
-                </figcaption>
-            </figure>
         </div>
 
         <!-- Natural Habitat Section -->
         <div class="section">
             <h2>Identyfikacja awarii</h2>
+            <p>
+                Pierwszym krokiem w usuwaniu awarii elektrycznej jest dokładna identyfikacja problemu. Obejmuje to:
+            </p>
             <ul>
                 <li><b>Diagnozę objawów:</b> np. brak prądu, migotanie świateł, wybijanie bezpieczników.</li>
-                <li>Lokalizację problemu: ustalenie, czy awaria dotyczy całego budynku, jednej części instalacji, czy może urządzenia.</li>
+                <li><b>Lokalizację problemu:</b> ustalenie, czy awaria dotyczy całego budynku, jednej części instalacji, czy może urządzenia.</li>
             </ul>
-            <p>
-                Penguins live in oceans and coasts where the temperatures range from 90℉ (32℃) to -76℉ (-60℃). 
-                Most species of penguins live on islands in the Southern Hemisphere, where the climate is warm enough
-                for them to survive. However, the Emperor and Adélie species live in Antarctica, where the climate
-                is harshly cold. 
-            </p>
-            <figure>
-                <img src="./images/penguin-islands.jpeg" alt="An image of penguins roaming around the coast of an island">
-                <figcaption>
-                    <article class="italic">Fig 2 - A group of penguins on an island</article><br>
-                    <a href="https://untamedanimals.com/can-penguins-live-in-warm-weather/" target="_blank">Source</a>
-                </figcaption>
-            </figure>
-        </div>
-
-        <!-- Species Section -->
-        <div class="section">
-            <h2>Species</h2>
-            <p>
-                There are many species of penguins. According to 
-                <a href="https://www.nationalgeographic.com/animals/birds/facts/penguins-1#:~:text=Penguins%20are%20flightless%20seabirds%20that,in%20and%20around%20icy%20Antarctica." target="_blank">National Geographic</a>,
-                there are 18 different species of penguins around the world. However, other sources claim that there are up to
-                around 20-25 different species of penguins.
-            </p>
         </div>
         
         <!-- Photo Slideshow for species section -->
@@ -87,163 +129,28 @@
             <ul>
                 <li class="slide fade-in">
                     <figure>
-                        <img src="./images/species-pg/adelie.jpeg" alt="Adelie Penguin">
+                        <img src="/src/images/awaira/przeciazenie.jpg" alt="Przeciążenie Przewodu">
                         <figcaption>
-                            <article class="italic">Adelie Penguin</article> (1/18)<br>
-                            <a href="https://ebird.org/species/adepen1" target="_blank">Source</a>
+                            <article class="italic">Typowe awarie i ich przyczyny</article> (1/3)<br>
+                            <a target="_blank"><b>Przeciążenie obwodu -</b> zbyt wiele urządzeń podłączonych do jednego obwodu może prowadzić do przeciążenia i wyzwalania bezpieczników.</a>
                         </figcaption>
                     </figure>
                 </li>
                 <li class="slide fade-in">
                     <figure>
-                        <img src="./images/species-pg/african.jpeg" alt="African Penguin">
+                        <img src="/src/images/awaira/zwarcie.jpg" alt="Zwarcie Obwodu">
                         <figcaption>
-                            <article class="italic">African Penguin</article> (2/18)<br>
-                            <a href="https://ebird.org/species/jacpen1" target="_blank">Source</a>
+                            <article class="italic">Typowe awarie i ich przyczyny</article> (2/3)<br>
+                            <a target="_blank"><b>Zwarcie -</b> uszkodzenie izolacji przewodów może prowadzić do zwarcia, co skutkuje wyłączeniem zasilania.</a>
                         </figcaption>
                     </figure>
                 </li>
                 <li class="slide fade-in">
                     <figure>
-                        <img src="./images/species-pg/chinstrap.jpeg" alt="Chinstrap Penguin">
+                        <img src="/src/images/awaira/uszkodzenie.jpg" alt="Uszkodzenie Urządzenia">
                         <figcaption>
-                            <article class="italic">Chinstrap Penguin</article> (3/18)<br>
-                            <a href="https://ebird.org/species/chipen2" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/emperor.jpeg" alt="Emperor Penguin">
-                        <figcaption>
-                            <article class="italic">Emperor Penguin</article> (4/18)<br>
-                            <a href="https://ebird.org/species/emppen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/erect-crested.jpeg" alt="Erect-Crested Penguin">
-                        <figcaption>
-                            <article class="italic">Erect-Crested Penguin</article> (5/18)<br>
-                            <a href="https://ebird.org/species/bicpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/fiordland.jpeg" alt="Fiordland Penguin">
-                        <figcaption>
-                            <article class="italic">Fiordland Penguin</article> (6/18)<br>
-                            <a href="https://ebird.org/species/fiopen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/galapagos.jpeg" alt="Galapagos Penguin">
-                        <figcaption>
-                            <article class="italic">Galapagos Penguin</article> (7/18)<br>
-                            <a href="https://ebird.org/species/galpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/gentoo.jpeg" alt="Gentoo Penguin">
-                        <figcaption>
-                            <article class="italic">Gentoo Penguin</article> (8/18)<br>
-                            <a href="https://ebird.org/species/genpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/humboldt.jpeg" alt="Humboldt Penguin">
-                        <figcaption>
-                            <article class="italic">Humboldt Penguin</article> (9/18)<br>
-                            <a href="https://ebird.org/species/humpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/king.jpeg" alt="King Penguin">
-                        <figcaption>
-                            <article class="italic">King Penguin</article> (10/18)<br>
-                            <a href="https://ebird.org/species/kinpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/little.jpeg" alt="Little Penguin">
-                        <figcaption>
-                            <article class="italic">Little Penguin</article> (11/18)<br>
-                            <a href="https://ebird.org/species/litpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/macaroni.jpeg" alt="Macaroni Penguin">
-                        <figcaption>
-                            <article class="italic">Macaroni Penguin</article> (12/18)<br>
-                            <a href="https://ebird.org/species/macpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/magellanic.jpeg" alt="Magellanic Penguin">
-                        <figcaption>
-                            <article class="italic">Magellanic Penguin</article> (13/18)<br>
-                            <a href="https://ebird.org/species/magpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/northern-rockhopper.jpeg" alt="Northern-Rockhopper Penguin">
-                        <figcaption>
-                            <article class="italic">Northern-Rockhopper Penguin</article> (14/18)<br>
-                            <a href="https://ebird.org/species/rocpen4?siteLanguage=en_PH" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/royal.jpeg" alt="Royal Penguin">
-                        <figcaption>
-                            <article class="italic">Royal Penguin</article> (15/18)<br>
-                            <a href="https://ebird.org/species/roypen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/snares.jpeg" alt="Snares Penguin">
-                        <figcaption>
-                            <article class="italic">Snares Penguin</article> (16/18)<br>
-                            <a href="https://ebird.org/species/snapen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/southern-rockhopper.jpeg" alt="Southern-Rockhopper Penguin">
-                        <figcaption>
-                            <article class="italic">Southern-Rockhopper Penguin</article> (17/18)<br>
-                            <a href="https://ebird.org/species/rocpen1" target="_blank">Source</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide fade-in">
-                    <figure>
-                        <img src="./images/species-pg/yellow-eyed.jpeg" alt="Yellow-Eyed Penguin">
-                        <figcaption>
-                            <article class="italic">Yellow-Eyed Penguin</article> (18/18)<br>
-                            <a href="https://ebird.org/species/yeepen1" target="_blank">Source</a>
+                            <article class="italic">Typowe awarie i ich przyczyny</article> (3/3)<br>
+                            <a target="_blank"><b>Uszkodzone urządzenia -</b> niektóre urządzenia mogą powodować zwarcia lub przeciążenia w sieci.</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -252,48 +159,112 @@
 
         <!-- Colony Life Section -->
         <div class="section">
-            <h2>Colony Life</h2>
+            <h2>Bezpieczeństwo</h2>
             <p>
-                Penguins are extremely social birds that form large colonies with one another.
-                Penguins do this in order to breed, hunt for food, and protect each other from predators.
-                Additionally, with species like the Emperor penguin, forming colonies also helps protect them from the harsh antarctic environment.
+                Przed podjęciem jakichkolwiek działań naprawczych kluczowe jest zapewnienie bezpieczeństwa:
             </p>
-            <figure>
-                <img src="./images/penguin-huddle.jpg" alt="A colony of emperor penguins huddling in a snowstorm">
-                <figcaption>
-                    <article class="italic">Fig 3 - A colony of emperor penguins huddling in a snowstorm</article><br>
-                    <a href="https://asknature.org/strategy/group-organization-protects-from-the-cold/" target="_blank">Source</a>
-                </figcaption>
-            </figure>
+            <ul>
+                <li><b>Wyłączenie zasilania:</b> wyłączenie głównego wyłącznika prądu w celu uniknięcia porażenia elektrycznego.</li>
+                <li><b>Użycie odpowiednich narzędzi:</b> np. rękawic izolacyjnych, mierników napięcia..</li>
+            </ul>
         </div>
 
-        <!-- Fun Facts Section -->
         <div class="section">
-            <h2>Fun Facts</h2>
+            <h2>Diagnostyka i naprawa</h2>
+            <p>
+                Po zapewnieniu bezpieczeństwa można przystąpić do diagnostyki i naprawy:
+            </p>
             <ul>
-                <li>
-                    Penguins can dive to depths of 500 meters and hold their breath underwater for up to 27 minutes.
-                </li>
-                <li>
-                    Penguins can swim up to 10 miles per hour underwater.
-                </li>
-                <li>
-                    The largest penguin colony in the world is located in 
-                    <a href="https://www.penguinsinternational.org/2020/06/27/chinstrap-penguins-risking-their-lives-on-zavodovski-island/" target="_blank">Zavodovski Island</a> 
-                    with over a million chinstrap penguins.
-                </li>
-                <li>
-                    The little penguin is the smallest penguin in the world, only measuring up to 10 inches tall.
-                </li>
-                <li>
-                    Penguins lose and replace all their feathers annually, this is known as a catastophic molt.
-                </li>
+                <li><b>Sprawdzenie bezpieczników i wyłączników:</b> uszkodzone bezpieczniki lub wyłączniki nadprądowe często są przyczyną problemów.</li>
+                <li><b>Testowanie ciągłości obwodów:</b> użycie mierników do sprawdzenia, czy obwody są przerwane.</li>
+                <li><b>Naprawa lub wymiana uszkodzonych elementów:</b> np. przewodów, gniazdek, wyłączników.</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <h2>Przywrócenie zasilania</h2>
+            <p>
+                Po zakończeniu naprawy, należy:
+            </p>
+            <ul>
+                <li><b>Sprawdzić poprawność połączeń:</b> upewnić się, że wszystkie naprawione elementy są poprawnie podłączone.</li>
+                <li><b>Włączyć zasilanie:</b> stopniowo przywrócić zasilanie i monitorować działanie instalacji.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Testowanie i monitorowanie</h2>
+            <p>
+                Po przywróceniu zasilania warto przeprowadzić dodatkowe testy, aby upewnić się, że problem został całkowicie rozwiązany:
+            </p>
+            <ul>
+                <li><b>Monitorowanie działania:</b> obserwacja, czy awaria nie powraca.</li>
+                <li><b>Sprawdzanie parametrów elektrycznych:</b> upewnienie się, że napięcie, natężenie i inne parametry są w normie.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Dokumentacja i prewencja</h2>
+            <p>
+                Zakończenie procesu naprawy powinno obejmować:
+            </p>
+            <ul>
+                <li><b>Dokumentację:</b> zapisanie szczegółów awarii i przeprowadzonych napraw.</li>
+                <li><b>Działania prewencyjne:</b> zalecenia dotyczące konserwacji i regularnych przeglądów instalacji elektrycznej.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Podsumowanie</h2>
+            <p>
+                Usuwanie awarii elektrycznych wymaga zarówno wiedzy technicznej, jak i ostrożności. Prawidłowa diagnoza, zapewnienie bezpieczeństwa oraz dokładne przeprowadzenie napraw są kluczowe dla skutecznego rozwiązania problemu. W przypadku bardziej skomplikowanych awarii zawsze warto skonsultować się z profesjonalnym elektrykiem.
+            </p>
         </div>
     </main>
 
     <!-- Added bottom margin for page since main is relatively positioned -->
     <div id="bottom-margin"></div>
+
+    <footer class="footer" id="footer-section">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="cn">
+            <div class="row">
+                <div class="col">
+                    <h2>Multi Technical Services</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Usługi</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li><a href="tel:+48781446584">Numer: +48-781-446-584</a></li>
+                        <li><a href="mailto:twojemail@gmail.com">E-mal: twojemail@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="copywrites">
+                    <p>2024 © Multi Technical Services.</p>
+                </div>
+                <div class="footer-media">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </footer>
 
 </body>
 

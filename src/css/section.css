@@ -1,6 +1,6 @@
 :root {
     --highlight-color: #f5751c;
-    --section-color: #fff;
+    --section-color: #ffffffe9;
     --obscured-color: #556575;
 }
 
@@ -75,10 +75,6 @@ header{
     max-width: 100%;
 }
 
-#destaque-section .noticia:hover {
-    color: var(--nav-hover-color);
-}
-
 .destaque {
     margin: 10px 0 30px 10px;
     padding: 15px;
@@ -100,16 +96,16 @@ section h2 {
     margin-bottom: 32px;
 }
 
+main .noticia:hover {
+    color: var(--nav-hover-color);
+}
+
 aside {
     padding-left: 40px;
 }
 
 aside .noticia {
     margin-bottom: 24px;
-}
-
-aside .noticia:hover {
-    color: var(--nav-hover-color);
 }
 
 #noticias-section {

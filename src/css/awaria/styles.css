@@ -7,11 +7,14 @@
     --bg-color-green: 131;
     --bg-color-blue: 30;
     
-    --img-border-color: rgba(60, 60, 60, 1.0);
+    /*-- for slider too --*/
+    --img-border-color: #74a774;
     --img-border-size: 5px;
 
-    --main-bg-color: rgba(220, 220, 220, 0.90);
+    --main-bg-color: rgba(220, 220, 220, 0.95);
     --white-text-color: #e6e6e6;
+    
+    --main-text-color: #193946;
 }
 
 /* Make every element have 0 margin and padding as well as border-box sizing for ease of sizing elements */
@@ -24,7 +27,7 @@
 /* Adjust base font and html element height */
 html {
     font-size: 22px;
-    color: #1e1e1e;
+    color: var(--main-text-color);
     font-family: sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Trebuchet MS';
 
     height: 100%;
@@ -65,7 +68,6 @@ body {
 
 /* Make paragraphs slightly more bold and add more vertical spacing between text */
 p {
-    font-weight: 500;
     text-indent: 1rem;
     line-height: 130%;
 }
@@ -75,30 +77,10 @@ li {
     margin-bottom: 8px;
 }
 ul {
+    margin-top: 10px;
     list-style-position: inside;
 }
-/* Add orange color to links */
-a {
-    color: orange;
-}
-/* Make links darker when they are hovered */
-a:hover {
-    color: #9e6d19;
-    transition: 0.25s;
-}
 
-header {
-    width: 100%;
-    height: 742px; /* Height of background image */
-
-    position: relative;
-    
-    /* Add a slightly dark overlay onto the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/header-banner.jpeg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /* Gradually transition the header's background image to the background color of the webpage */
 #header-fadeout {
     position: absolute;
@@ -107,39 +89,26 @@ header {
 
     top: 100%;
     left: 0;
-    /* Leave 1% of the element down so there isn't a line visible across the background */
-    transform: translateY(-99%);
-
-    background: linear-gradient(rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 0), 
-        rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 1));
 }
 
 main {
     /* Add a slightly transparent white background */
     background: var(--main-bg-color);
 
-    position: relative;
-    width: 80%;
-
-    /* Position main element slightly inside the header element */
-    top: var(--main-top-offset);
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    margin-right: 57px;
+    margin-left: 57px;
 
     padding: 60px;
     border-radius: 15px;
 }
 h1 {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 80px;
 }
 
 /* Add flex layout to website sections */
 .section {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -150,14 +119,18 @@ h1 {
 }
 /* Force section headers to take up 100% of the flex row */
 .section > h2 {
-    flex-basis: 100%;
     margin-bottom: 30px;
 }
 .section > p, .section > ul {
-    width: 65%;
+    width: 100%;
 }
 .section > figure {
     max-width: 30%;
+}
+
+/*-- Without this submenu doesn't work properly (only in awaria.html) --*/
+.submenu {
+    transform: translate(0, -10px);
 }
 
 figure img {
@@ -165,7 +138,7 @@ figure img {
     height: 100%;
     object-fit: contain;
     vertical-align: middle;
-    border-radius: 10px 10px 0 0;
+    border-radius: 17px;
     /* Add border to images inside figures */
     border: 5px solid var(--img-border-color);
 }
@@ -190,7 +163,10 @@ figcaption > a {
 .photo-slideshow {
     position: relative;
     margin: 40px auto 0 auto;
-    width: 40%;
+    padding: 7px;
+    border-radius: 23px;
+    background-color: var(--img-border-color);
+    width: 67%;
 }
 /* Remove bullet points from list */
 .photo-slideshow > ul {
@@ -308,14 +284,11 @@ figcaption > a {
     main {
         padding: 40px;
     }
-    .section > p, .section > ul {
-        width: 85%;
-    }
     .section > figure {
         margin: 20px auto 0 auto;
         max-width: 60%;
     }
     .photo-slideshow {
-        width: 60%;
+        width: 67%;
     }
 }
