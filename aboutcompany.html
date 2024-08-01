@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Elektryk, Piła, Okolicy, Strona">
+    <title>O naszej firmie</title>
 
-    <title>Multi Technical Services</title>
+    <!-- Google review script -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/peledies/google-places/master/google-places.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA7kuH-pTYGq783gkQO0fN_OGiE8-hP1xk&signed_in=true&libraries=places"></script>
+    <link rel="stylesheet" href="https://rawgit.com/peledies/google-places/master/google-places.css">
+    <!-------------------------->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/mediumScreen.css">
     <link rel="stylesheet" href="./src/css/smallScreen.css">
-    <link rel="stylesheet" href="./src/css/section.css">
-    <link rel="stylesheet" href="./src/css/intro.css">
     <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/aboutcompany/aboutcompany.css">
 </head>
 <body>
+    <!-- Header -->
     <div class="grid-container">
         <header class="header">
             <div class="header-container">
@@ -29,7 +37,7 @@
                 <nav class="nav">
                     <ul class="list menu">
                         <li class="list-item">
-                            <a>
+                            <a href="./index.html">
                                 <span class="icon"></span>
                                 <span class="title">Usługi</span>
                                 <ul class="submenu">
@@ -49,6 +57,12 @@
                             <a href="/contact.html">
                                 <span class="icon"></span>
                                 <span class="title">Kontakt</span>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="/index.html">
+                                <span class="icon"></span>
+                                <span class="title">Główna</span>
                             </a>
                         </li>
                     </ul>
@@ -81,12 +95,13 @@
     <div class="container conteudo">
         <main>
             <section class="destaque" id="destaque-section">
-                <h2>O nas</h2>
+                <h2>Szef Przemek</h2>
                 <article class="noticia hover">
-                    <a href="/aboutcompany.html">
+                    <a>
                         <img src="https://via.placeholder.com/320x320">
-                        <p><b>Elektryk Piła Okolicy.</b> Profesjonalne Usługi Elektryczne w zakresie rozwiązywania problemów i napraw instalacji, modernizacji i pomiarów elektrycznych.</p>
+                        <p><b>Elektryk Piła Okolicy.</b>Informacja o wykształceniu, doświadczeniu i t.p. Lorem ipsum dolor sit amet, consectetur adipiscing e magna aliqua. Ut enim ad minim veniam, quis nostrud exerci at. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labor</p>
                     </a>
+                    <a><p>lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></a>
                 </article>
             </section>
             <section id="noticias-section">
@@ -113,25 +128,9 @@
                 </div>
             </section>
         </main>
-        <aside>
-            <section class="novidades" id="novidades-section">
-                <h2>Ostatnio wykonane prace</h2>
-                <article class="noticia">
-                    <a>
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>Lorem ipsum dolor, sit. Ratione laboriosam, non alias perspiciatis.</h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a>
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>Lorem ipsum dolor, sit. Ratione laboriosam, non alias perspiciatis.</h3>
-                    </a>
-                </article>
-            </section>
-        </aside>
     </div>
 
+    <!-- Footer -->
     <footer class="footer" id="footer-section">
         <ul class="circles">
             <li></li>
@@ -172,8 +171,8 @@
             
         </div>
     </footer>
-
-    <script src="./src/javascript/main.js"></script>
 </body>
+
+<script src="./src/javascript/main.js"></script>
 
 </html>

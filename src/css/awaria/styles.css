@@ -8,7 +8,7 @@
     --bg-color-blue: 30;
     
     /*-- for slider too --*/
-    --img-border-color: #2dbea1;
+    --img-border-color: #8cb08b;
     --img-border-size: 5px;
 
     --main-bg-color: rgba(255, 255, 255, 0.95);
@@ -26,7 +26,7 @@
 
 /* Adjust base font and html element height */
 html {
-    font-size: 19px;
+    font-size: 1rem;
     color: var(--main-text-color);
     font-family: sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Trebuchet MS';
 
@@ -35,6 +35,7 @@ html {
 
 /* Adjust body element size and add an orange background */
 body {
+    font-size: 1,5rem;
     width: 100%;
     height: 100%;
     background: rgb(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue));
@@ -150,7 +151,7 @@ figure img {
 figcaption {
     padding: 3px;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
     background: var(--img-border-color);
     border-radius: 0px 0px 10px 10px;
     color: var(--white-text-color);

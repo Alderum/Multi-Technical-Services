@@ -6,7 +6,7 @@
 
     .header .header-container .nav {
         position: absolute;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         top: 58px;
         left: 0;
@@ -17,15 +17,39 @@
         padding: 0 !important;
         overflow: hidden;
         transition: var(--main-transition);
+        background-color: #8cb08b;
+        max-width: fit-content;
+        border-radius: 21px;
+        margin-left: auto;
+        margin-right: 11px;
     }
 
     .header .header-container .nav.active {
-        min-height: 100px;
+        height: fit-content;
+        color: #fff;
         opacity: 1;
     }
 
+    .header .header-container .nav.active .title {
+        color: #fff;
+    }
+    .header .header-container .nav.active .title:hover {
+        color: var(--nav-hover-color);
+    }
+
+    .header .header-container .nav.active .media-icon {
+        color: #fff;
+    }
+
     .header .header-container .nav .list {
+        position: relative;
         margin: 0;
+    }
+
+    .header .header-container .nav .list .submenu {
+        margin-bottom: 11px;
+        background-color: #8cb08b;
+        color: #fff;
     }
 
     .header .header-container #burger {

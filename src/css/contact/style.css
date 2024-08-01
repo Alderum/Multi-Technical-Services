@@ -60,7 +60,7 @@ section
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #2dbea1;
+    background: #8cb08b;
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -238,7 +238,7 @@ section
 {
     position: relative;
     cursor: pointer;
-    background: #2dbea1;
+    background: #8cb08b;
     border-radius: 20px;
     color: #fff;
     border: none;
