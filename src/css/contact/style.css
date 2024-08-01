@@ -19,7 +19,10 @@ section
  * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
 */
     /* Location of the image */
-    background-image: url(/src/images/background-photo.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(/src/images/background-photo.jpg);
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
@@ -107,7 +110,10 @@ section
     text-decoration: none;
     width: 30px;
     min-width: 30px;
-    
+}
+.container .contactInfo ul.info li span a[type="email"]
+{
+    font-size: 0.9em;    
 }
 
 .container .contactInfo ul.info li span:nth-child(1) img

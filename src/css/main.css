@@ -46,7 +46,10 @@ body {
  * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
 */
     /* Location of the image */
-    background-image: url(../images/background-photo.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(/src/images/background-photo.jpg);
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;

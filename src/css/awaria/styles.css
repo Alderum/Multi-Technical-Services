@@ -44,7 +44,10 @@ body {
  * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
 */
     /* Location of the image */
-    background-image: url(/src/images/background-photo.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(/src/images/background-photo.jpg);
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
@@ -121,9 +124,11 @@ h1 {
 /* Force section headers to take up 100% of the flex row */
 .section > h2 {
     margin-bottom: 30px;
+    font-size: 2em;
 }
 .section > p, .section > ul {
     width: 100%;
+    font-size: 1.5em;
 }
 .section > figure {
     max-width: 30%;
@@ -247,8 +252,9 @@ figcaption > a {
 /* Phone Screens (screen width <= 425px) */
 @media screen and (max-width: 425px) {
     main {
-        width: 90%;
         padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .section > p, .section > ul {
         width: 100%;
@@ -256,6 +262,7 @@ figcaption > a {
     .section > figure {
         margin-top: 10px;
         max-width: 100%;
+        margin: 20px auto 0 auto;
     }
     .photo-slideshow {
         width: 100%;
@@ -269,6 +276,8 @@ figcaption > a {
 @media screen and (min-width: 426px) and (max-width: 820px) {
     main {
         padding: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .section > p, .section > ul {
         width: 100%;
@@ -289,6 +298,8 @@ figcaption > a {
 @media screen and (min-width: 821px) and (max-width: 1024px) {
     main {
         padding: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .section > figure {
         margin: 20px auto 0 auto;

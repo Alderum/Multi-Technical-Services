@@ -76,7 +76,7 @@ header{
 }
 
 .destaque {
-    margin: 10px 0 30px 10px;
+    margin: 10px 0 10px 10px;
     padding: 15px;
     background-color: var(--section-color);
     border-radius: 16px;
@@ -86,6 +86,10 @@ header{
 .destaque .noticia a {
     display: flex;
     font-size: 2em;
+}
+
+.destaque .noticia p {
+    font-size: 0.8em;
 }
 
 .destaque .noticia img {
@@ -101,7 +105,7 @@ main .noticia:hover {
 }
 
 aside {
-    padding-left: 40px;
+    padding-left: 32px;
 }
 
 aside .noticia {
@@ -113,6 +117,7 @@ aside .noticia {
     border-radius: 16px;
     padding: 15px;
     margin-bottom: 10px;
+    margin-left: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
 }
 
@@ -137,12 +142,18 @@ aside .noticia {
 }
 
 @media (max-width: 900px) {
-    .conteudo {
-        display: block;
-    }
 
     .container {
         max-width: 90%;
+    }
+
+    .novidades {
+        margin-right: 0;
+    }
+
+    .destaque {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .destaque .noticia a {
@@ -162,12 +173,12 @@ aside .noticia {
         margin-bottom: 32px;
     }
 
-    aside {
-        padding-left: 0;
-    }
-
     header div.container {
         flex-direction: column;
+    }
+
+    aside {
+        padding: 10px;
     }
 
     .submenu {
@@ -206,7 +217,11 @@ aside .noticia {
     }
 }
 
-@media screen and (min-width: 501px) and (max-width: 900px) {
+@media screen and (max-width: 620px) {
+    .conteudo {
+        display: block;
+    }
+
     .container {
         max-width: 90%;
     }
@@ -217,6 +232,10 @@ aside .noticia {
 
     .destaque .noticia a {
         font-size: 1.5em;
+    }
+
+    #noticias-section {
+        margin-left: 0;
     }
 
     .noticias {
