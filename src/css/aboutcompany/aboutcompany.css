@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -84,16 +83,21 @@ header{
 }
 
 .destaque .noticia a {
-    display: flex;
+    display: block;
     font-size: 2em;
 }
 
 .destaque .noticia p {
     font-size: 0.8em;
+    text-align: justify;
+    float: none;
 }
 
 .destaque .noticia img {
     margin-right: 8px;
+    margin-bottom: 7px;
+    max-height: 320px;
+    float: left;
 }
 
 section h2 {
@@ -137,7 +141,6 @@ aside .noticia {
 }
 
 @media (max-width: 900px) {
-
     .novidades {
         margin-right: 0;
     }
@@ -148,11 +151,20 @@ aside .noticia {
 
     .destaque .noticia a {
         display: block;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .destaque .noticia p {
+        font-size: 1.2em;
+        text-align: left;
+        float: none;
     }
     
     .destaque .noticia img {
-        margin-right: 0;
+        margin-right: 7px;
+        margin-bottom: 3px;
+        float: left;
     }
 
     .noticias {
@@ -210,7 +222,18 @@ aside .noticia {
     }
 
     .destaque .noticia a {
-        font-size: 1.5em;
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .destaque .noticia p {
+        font-size: 1.1em;
+        text-align: left;
+    }
+    
+    .destaque .noticia img {
+        margin-right: 0;
+        float: none;
     }
 
     .noticias {

@@ -28,7 +28,6 @@
 html {
     font-size: 1rem;
     color: var(--main-text-color);
-    font-family: sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Trebuchet MS';
 
     height: 100%;
 }

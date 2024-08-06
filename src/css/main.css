@@ -12,6 +12,7 @@
     --gradient-1: linear-gradient(to right, #6bb3a5 0%, #f7a600 100%);
     --main-transition:cubic-bezier(0.39, 0.575, 0.565, 1) .3s;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /*---------------------------------------reset Style*/
 *{
     margin: 0;
@@ -40,7 +41,7 @@ body {
     font-size: 1rem;
     color: var(--color-primary);
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 
 /* Responsive Full Background Image Using CSS
  * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
@@ -71,6 +72,14 @@ body {
      * background: url(background-photo.jpg) center center cover no-repeat fixed;
      */
   }
+
+h1 {
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    letter-spacing: -0.5px;
+}
 
 .header {
     position: relative;
